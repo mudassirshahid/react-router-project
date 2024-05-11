@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+a:hover{
+    background-color: none !important;
+}
+a:focus-visible {
+    outline: none;
+    background-color: none !important;
+    border: none;
+}
