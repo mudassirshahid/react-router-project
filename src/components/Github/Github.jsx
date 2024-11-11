@@ -4,7 +4,7 @@ import { useLoaderData } from 'react-router-dom'
 function Github() {
 
     const data = useLoaderData()
-    console.log(data);
+    console.log(`Data: ${data}`);
 
     // First Method
     // const [data, setData] = useState([])
@@ -19,9 +19,9 @@ function Github() {
     // }, [])
   return (
     <>
-      <div>
+      <div className='flex flex-col justify-center items-center m-auto'>
         <h1>Github Avatar:</h1>
-        <img src={data.avatar_url} alt="Github Profile" />
+        <img className='w-2/4' src={data.avatar_url} alt="Github Profile" />
       </div>
     </>
   )
